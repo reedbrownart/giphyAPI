@@ -1,0 +1,60 @@
+body {
+    background-color: turquoise;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    background-color: grey;
+    border: 3px black solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+}
+
+p {
+    border: 3px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    background-color: white;
+}
+
+input {
+    border: 3px black solid;
+    border-radius: 5px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
+
+#results {
+    text-align: center;
+    width: 80vw;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+#questions {
+    height: 30vh;
+    width: 30vw;
+}
+
+#imageBoard {
+    flex-wrap: wrap;
+}
