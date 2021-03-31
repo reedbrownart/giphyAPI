@@ -11,7 +11,7 @@ const search = '&q=';
 const limit = '&limit=';
 const offset = '&offset=';
 const rating = '&rating=';
-const language = '&lang='
+const language = '&lang=';
 
 //For personal testing
 const working = ' is working!!!!!111';
@@ -134,21 +134,21 @@ function buttonPress1() {
 }
 
 function buttonPress2() {
-    let randomNum = Math.floor(Math.random() * gifLibrary1.length);
+    let randomNum = Math.floor(Math.random() * gifLibrary2.length);
     image2.src = 'https://media3.giphy.com/media/' + gifLibrary2[randomNum].id + '/giphy.gif';
 }
 
 function buttonPress3() {
-    let randomNum = Math.floor(Math.random() * gifLibrary1.length);
+    let randomNum = Math.floor(Math.random() * gifLibrary3.length);
     image3.src = 'https://media3.giphy.com/media/' + gifLibrary3[randomNum].id + '/giphy.gif';
 }
 
 function buttonPress4() {
-    let randomNum = Math.floor(Math.random() * gifLibrary1.length);
+    let randomNum = Math.floor(Math.random() * gifLibrary4.length);
     image4.src = 'https://media3.giphy.com/media/' + gifLibrary4[randomNum].id + '/giphy.gif';
 }
 
 function buttonPress5() {
-    let randomNum = Math.floor(Math.random() * gifLibrary1.length);
+    let randomNum = Math.floor(Math.random() * gifLibrary5.length);
     image5.src = 'https://media3.giphy.com/media/' + gifLibrary5[randomNum].id + '/giphy.gif';
 }

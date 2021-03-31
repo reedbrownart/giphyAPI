@@ -159,13 +159,13 @@ img {
 }
 
 #image1 {
-    animation: fading 20s, saturate 8s;
+    animation: fading 8s, saturate 20s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 #image2 {
-    animation: fading 17s, saturate 11s;
+    animation: fading 11s, saturate 17s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -177,13 +177,13 @@ img {
 }
 
 #image4 {
-    animation: fading 11s, saturate 17s;
+    animation: fading 17s, saturate 11s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 #image5 {
-    animation: fading 8s, saturate 20s;
+    animation: fading 20s, saturate 8s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
