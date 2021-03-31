@@ -12,24 +12,47 @@
 
 <body>
     <div id="questions">
-        <form>
-            <!-- <input type="radio" id="gifs" name="searchType" value="gifs" required>
-            <label for="gifs">GIFs</label><br>
-            <input type="radio" id="stickers" name="searchType" value="stickers" required>
-            <label for="stickers">Stickers</label><br> -->
+        <form id = "submitForm">
+            <h1>Please respond in four words or less for each question</h1>
             <p>
-                <label>What are you searching for? </label>
-                <input type="text" id="searchTerms" required>
+                <label>What is the meaning of life? </label>
+                <input type="text" id="question1" required>
             </p>
-            <button id="submit">
-                <p>Submit</p>
-            </button>
+            <p>
+                <label>What fictional charcter do you wish you were? </label>
+                <input type="text" id="question2" >
+            </p>
+            <p>
+                <label>What is your favorite food? </label>
+                <input type="text" id="question3" >
+            </p>
+            <p>
+                <label>What is your favorite number? </label>
+                <input type="text" id="question4" >
+            </p>
+            <p>
+                <label>What is a symbol you identify with? </label>
+                <input type="text" id="question5" >
+            </p>
+            <button id="submit">Submit</button>
         </form>
     </div>
 
-    <section id="results">
+    <div id="results">
+        <img id = "image1">
+        <img id = "image2">
+        <img id = "image3">
+        <img id = "image4">
+        <img id = "image5">
+    </div>
 
-    </section>
+    <div id = "controls">
+        <button id="button1">Change the meaning of life?</button>
+        <button id="button2">Change your persona?</button>
+        <button id="button3">Change your lifesource?</button>
+        <button id="button4">Change your divine numeral?</button>
+        <button id="button5">Change your symbolic nature?</button>
+    </div>
 
     <script src="scripts.js"></script>
 </body>

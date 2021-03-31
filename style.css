@@ -1,25 +1,19 @@
+/*GENERIC STYLING*/
+
 body {
-    background-color: turquoise;
-    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    animation: colorChange 50s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 div {
-    background-color: grey;
-    border: 3px black solid;
-    border-radius: 5px;
     display: flex;
     justify-content: space-evenly;
     justify-items: space-evenly;
-    padding: 10px;
-    margin: 10px;
-}
-
-button {
-    border: 0;
-    background-color: transparent;
 }
 
 p {
@@ -30,6 +24,32 @@ p {
     font-size: large;
     font-weight: bold;
     background-color: white;
+    justify-content: space-between;
+}
+
+button {
+    border: 3px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    background-color: white;
+    justify-content: space-between;
+    width: 300px;
+    height: 60px;
+    margin: 20px;
+}
+
+h1 {
+    border: 3px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    background-color: white;
+    text-align: justify;
 }
 
 input {
@@ -38,23 +58,132 @@ input {
 }
 
 img {
-    height: 200px;
-    width: 200px;
-    padding: 10px;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: .8;
+    background-color: transparent;
 }
 
+/* ID STYLING */
+
 #results {
-    text-align: center;
-    width: 80vw;
+    position: relative;
+    margin: 0;
+    display: none;
     height: 100vh;
-    flex-wrap: wrap;
+    width: 100vw;
 }
 
 #questions {
-    height: 30vh;
-    width: 30vw;
+    position: absolute;
+    display: flex;
+    width: 700px;
+    height: 500px;
+    margin: 20px;
+    background-color: grey;
+    border: 3px black solid;
+    border-radius: 5px;
 }
 
-#imageBoard {
-    flex-wrap: wrap;
+#controls {
+    position: absolute;
+    width: 80vw;
+    height: 100px;
+
+    flex-direction: row;
+    top: 600px;
+    justify-content: space-evenly;
+}
+
+/*ANIMATION */
+
+@keyframes fading {
+    0% {
+        opacity: .8;
+    }
+    100% {
+        opacity: .3;
+    }
+}
+
+@keyframes saturate {
+    0% {
+        filter: saturate(1);
+    }
+    25% {
+        filter: saturate(2);
+    }
+    50% {
+        filter: saturate(5);
+    }
+    100% {
+        filter: saturate(20);
+    }
+}
+
+@keyframes inversion {
+    0% {
+        filter: invert(0);
+    }
+    100% {
+        filter: invert(1);
+    }
+}
+
+@keyframes hueRotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: white
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: red;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+#image1 {
+    animation: fading 20s, saturate 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#image2 {
+    animation: fading 17s, saturate 11s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#image3 {
+    animation: fading 14s, saturate 14s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#image4 {
+    animation: fading 11s, saturate 17s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#image5 {
+    animation: fading 8s, saturate 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
