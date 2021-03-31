@@ -130,6 +130,7 @@ function buttonPressFINAL() {
 
 function buttonPress1() {
     let randomNum = Math.floor(Math.random() * gifLibrary1.length);
+    console.log(randomNum);
     image1.src = 'https://media3.giphy.com/media/' + gifLibrary1[randomNum].id + '/giphy.gif';
 }
 
