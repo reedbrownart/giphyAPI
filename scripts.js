@@ -104,8 +104,8 @@ function createSampler(array1, array2, array3, array4, array5) {
         console.log('image2' + working);
         image2.src = 'https://media3.giphy.com/media/' + array2[0].id + '/giphy.gif';
         results.appendChild(image2);
-        button1.textContent = 'Change your inspiration?';
-        button1.style.backgroundColor = "white";
+        button2.textContent = "Change your inspiration?";
+        button2.style.backgroundColor = "white";
     } else {
         button2.textContent = 'sorry no results for this search';
         button2.style.backgroundColor = "red";
@@ -114,8 +114,8 @@ function createSampler(array1, array2, array3, array4, array5) {
         console.log('image3' + working);
         image3.src = 'https://media3.giphy.com/media/' + array3[0].id + '/giphy.gif';
         results.appendChild(image3);
-        button1.textContent = 'Change your lifesource?';
-        button1.style.backgroundColor = "white";
+        button3.textContent = 'Change your lifesource?';
+        button3.style.backgroundColor = "white";
     } else {
         button3.textContent = 'sorry no results for this search';
         button3.style.backgroundColor = "red";
@@ -124,8 +124,8 @@ function createSampler(array1, array2, array3, array4, array5) {
         console.log('image4' + working);
         image4.src = 'https://media3.giphy.com/media/' + array4[0].id + '/giphy.gif';
         results.appendChild(image4);
-        button1.textContent = 'Change your divine number?';
-        button1.style.backgroundColor = "white";
+        button4.textContent = 'Change your divine number?';
+        button4.style.backgroundColor = "white";
     } else {
         button4.textContent = 'sorry no results for this search';
         button4.style.backgroundColor = "red";
@@ -134,8 +134,8 @@ function createSampler(array1, array2, array3, array4, array5) {
         console.log('image5' + working);
         image5.src = 'https://media3.giphy.com/media/' + array5[0].id + '/giphy.gif';
         results.appendChild(image5);
-        button1.textContent = 'Change your symbolic nature?';
-        button1.style.backgroundColor = "white";
+        button5.textContent = 'Change your symbolic nature?';
+        button5.style.backgroundColor = "white";
     } else {
         button5.textContent = 'sorry no results for this search';
         button5.style.backgroundColor = "red";
