@@ -71,6 +71,7 @@ function fetchData(e) {
     let fourthAPICall = fetch(baseURL + searchGifURL + myKey + search + answer4.value + limit + '25' + offset + '0' + rating + 'g' + language + 'en');
     let fifthAPICall = fetch(baseURL + searchGifURL + myKey + search + answer5.value + limit + '25' + offset + '0' + rating + 'g' + language + 'en');
 
+
     //jsonifies all of the fetches into arrays and then runs create sampler with the newly created arrays
     Promise.all([firstAPICall, secondAPICall, thirdAPICall, fourthAPICall, fifthAPICall])
         .then(values => Promise.all(values.map(value => value.json())))
@@ -85,24 +86,67 @@ function fetchData(e) {
 }
 
 function createSampler(array1, array2, array3, array4, array5) {
-    questions.style.display = 'none';
-    results.style.display = 'flex';
-    controls.style.display = 'flex';
-
     while (results.firstChild) {
         results.removeChild(results.firstChild);
     }
 
-    image1.src = 'https://media3.giphy.com/media/' + array1[0].id + '/giphy.gif';
-    results.appendChild(image1);
-    image2.src = 'https://media3.giphy.com/media/' + array2[0].id + '/giphy.gif';
-    results.appendChild(image2);
-    image3.src = 'https://media3.giphy.com/media/' + array3[0].id + '/giphy.gif';
-    results.appendChild(image3);
-    image4.src = 'https://media3.giphy.com/media/' + array4[0].id + '/giphy.gif';
-    results.appendChild(image4);
-    image5.src = 'https://media3.giphy.com/media/' + array5[0].id + '/giphy.gif';
-    results.appendChild(image5);
+    if (array1[0]) {
+        console.log('image1' + working);
+        image1.src = 'https://media3.giphy.com/media/' + array1[0].id + '/giphy.gif';
+        results.appendChild(image1);
+        button1.textContent = 'Change the meaning of life?';
+        button1.style.backgroundColor = "white";
+    } else {
+        button1.textContent = 'sorry no results for this search';
+        button1.style.backgroundColor = "red";
+    }
+    if(array2[0]) {
+        console.log('image2' + working);
+        image2.src = 'https://media3.giphy.com/media/' + array2[0].id + '/giphy.gif';
+        results.appendChild(image2);
+        button1.textContent = 'Change your inspiration?';
+        button1.style.backgroundColor = "white";
+    } else {
+        button2.textContent = 'sorry no results for this search';
+        button2.style.backgroundColor = "red";
+    }
+    if(array3[0]) {
+        console.log('image3' + working);
+        image3.src = 'https://media3.giphy.com/media/' + array3[0].id + '/giphy.gif';
+        results.appendChild(image3);
+        button1.textContent = 'Change your lifesource?';
+        button1.style.backgroundColor = "white";
+    } else {
+        button3.textContent = 'sorry no results for this search';
+        button3.style.backgroundColor = "red";
+    }
+    if(array4[0]) {
+        console.log('image4' + working);
+        image4.src = 'https://media3.giphy.com/media/' + array4[0].id + '/giphy.gif';
+        results.appendChild(image4);
+        button1.textContent = 'Change your divine number?';
+        button1.style.backgroundColor = "white";
+    } else {
+        button4.textContent = 'sorry no results for this search';
+        button4.style.backgroundColor = "red";
+    }
+    if(array5[0]) {
+        console.log('image5' + working);
+        image5.src = 'https://media3.giphy.com/media/' + array5[0].id + '/giphy.gif';
+        results.appendChild(image5);
+        button1.textContent = 'Change your symbolic nature?';
+        button1.style.backgroundColor = "white";
+    } else {
+        button5.textContent = 'sorry no results for this search';
+        button5.style.backgroundColor = "red";
+    }
+    if (!array1[0] && !array2[0] && !array3[0] && !array4[0] && !array5[0]) {
+        console.log('no results for search 1');
+    } else {
+        questions.style.display = 'none';
+        results.style.display = 'flex';
+        controls.style.display = 'flex';
+    }
 }
 
 function buttonPressFINAL() {

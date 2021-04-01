@@ -90,10 +90,12 @@ img {
     position: absolute;
     width: 80vw;
     height: 100px;
-
+    display: none;
     flex-direction: row;
-    top: 600px;
+    bottom: 0px;
     justify-content: space-evenly;
+    opacity: .7;
+
 }
 
 /*ANIMATION */
