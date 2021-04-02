@@ -148,7 +148,7 @@ function createSampler(array1, array2, array3, array4, array5) {
         controls.style.display = 'flex';
     }
 }
-
+/*
 function buttonPressFINAL() {
     let randomNum = Math.floor(Math.random() * 25);
 
@@ -171,7 +171,7 @@ function buttonPressFINAL() {
             break;
     }
 }
-
+*/
 function buttonPress1() {
     let randomNum = Math.floor(Math.random() * gifLibrary1.length);
     console.log(randomNum);
@@ -180,20 +180,24 @@ function buttonPress1() {
 
 function buttonPress2() {
     let randomNum = Math.floor(Math.random() * gifLibrary2.length);
+    console.log(randomNum);
     image2.src = 'https://media3.giphy.com/media/' + gifLibrary2[randomNum].id + '/giphy.gif';
 }
 
 function buttonPress3() {
     let randomNum = Math.floor(Math.random() * gifLibrary3.length);
+    console.log(randomNum);
     image3.src = 'https://media3.giphy.com/media/' + gifLibrary3[randomNum].id + '/giphy.gif';
 }
 
 function buttonPress4() {
     let randomNum = Math.floor(Math.random() * gifLibrary4.length);
+    console.log(randomNum);
     image4.src = 'https://media3.giphy.com/media/' + gifLibrary4[randomNum].id + '/giphy.gif';
 }
 
 function buttonPress5() {
     let randomNum = Math.floor(Math.random() * gifLibrary5.length);
+    console.log(randomNum);
     image5.src = 'https://media3.giphy.com/media/' + gifLibrary5[randomNum].id + '/giphy.gif';
 }
